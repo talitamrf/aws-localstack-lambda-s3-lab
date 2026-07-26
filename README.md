@@ -43,6 +43,7 @@ O projeto possui dois fluxos principais:
 
 ## 📂 Estrutura do Projeto
 ---
+.
 ├── grava_db.py
 ├── gerar_dados.py
 ├── lambda_function.zip
