@@ -27,7 +27,20 @@ O projeto possui dois fluxos principais:
 
 ![Diagrama da arquitetura](imagens/diagrama-estrutura.png)
 
+### Fluxo pelo S3
+
+```text
+Arquivo JSON → Amazon S3 → AWS Lambda → Amazon DynamoDB
+```
+
+### Fluxo pela API
+
+```text
+Cliente → Amazon API Gateway → AWS Lambda → Amazon DynamoDB
+```
+
 ---
+
 ## 🛠️ Tecnologias e serviços utilizados
 
 - AWS CLI
@@ -42,8 +55,8 @@ O projeto possui dois fluxos principais:
 ---
 
 ## 📂 Estrutura do Projeto
----
-.
+
+```text
 ├── grava_db.py
 ├── gerar_dados.py
 ├── lambda_function.zip
@@ -64,6 +77,8 @@ O projeto possui dois fluxos principais:
     ├── 06-lambda-localstack.png
     ├── 07-api-gateway-detalhes.png
     └── 08-api-gateway-metodos.png
+```
+
 ---
 
 ## 🚀 Etapas Desenvolvidas
@@ -71,12 +86,13 @@ O projeto possui dois fluxos principais:
 - Preparação do ambiente com Docker, LocalStack e AWS CLI;
 - Criação do bucket S3 e da tabela no DynamoDB;
 - Desenvolvimento e configuração da função Lambda;
-- Configuração do trigger do S3 para executar a Lambda;
+- Configuração do trigger do S3;
 - Envio e processamento do arquivo JSON;
-- Criação da API REST no API Gateway;
+- Criação da API REST;
 - Configuração dos métodos GET e POST;
 - Integração da API com a Lambda;
-  
+- Testes pelo PowerShell e validação pelos logs do LocalStack.
+
 ---
 
 ## ⚙️ Funcionamento
@@ -92,6 +108,7 @@ O evento `s3:ObjectCreated:*` executa a função Lambda `ProcessarNotasFiscais`,
 ### API Gateway
 
 A API `NotasFiscaisAPI` possui o recurso `/notas` com dois métodos:
+
 
 - `POST /notas`: cadastra uma nova nota fiscal;
 - `GET /notas`: consulta as notas cadastradas.
@@ -153,5 +170,3 @@ Também foi possível compreender melhor o funcionamento de eventos do S3, funç
 ## 👩‍💻 Autora
 
 **Talita**
-- Testes pelo PowerShell e validação pelos logs do LocalStack.
-
