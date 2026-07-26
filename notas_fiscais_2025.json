@@ -1,0 +1,14 @@
+[
+    {
+        "id": "NF-001",
+        "cliente": "João Silva",
+        "valor": 1500.0,
+        "data_emissao": "2025-01-15"
+    },
+    {
+        "id": "NF-002",
+        "cliente": "Maria Santos",
+        "valor": 2300.5,
+        "data_emissao": "2025-02-20"
+    }
+]
