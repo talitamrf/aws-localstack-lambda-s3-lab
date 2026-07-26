@@ -38,10 +38,11 @@ O projeto possui dois fluxos principais:
 - AWS Lambda
 - Amazon S3
 - Amazon DynamoDB
+- Amazon API Gateway
 ---
 
 ## 📂 Estrutura do Projeto
-
+---
 ├── grava_db.py
 ├── gerar_dados.py
 ├── lambda_function.zip
@@ -64,5 +65,14 @@ O projeto possui dois fluxos principais:
     └── 08-api-gateway-metodos.png
 ---
 
-• Amazon API Gateway
----
+## 🚀 Etapas Desenvolvidas
+
+- Preparação do ambiente com Docker, LocalStack e AWS CLI;
+- Criação do bucket S3 e da tabela no DynamoDB;
+- Desenvolvimento e configuração da função Lambda;
+- Configuração do trigger do S3 para executar a Lambda;
+- Envio e processamento do arquivo JSON;
+- Criação da API REST no API Gateway;
+- Configuração dos métodos GET e POST;
+- Integração da API com a Lambda;
+- Testes pelo PowerShell e validação pelos logs do LocalStack.
