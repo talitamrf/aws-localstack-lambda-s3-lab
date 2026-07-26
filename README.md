@@ -30,13 +30,39 @@ O projeto possui dois fluxos principais:
 ---
 ## 🛠️ Tecnologias e serviços utilizados
 
-• AWS CLI
-• LocalStack
-• Docker Desktop
-• PowerShell
-• Python
-• AWS Lambda
-• Amazon S3
-• Amazon DynamoDB
+- AWS CLI
+- LocalStack
+- Docker Desktop
+- PowerShell
+- Python
+- AWS Lambda
+- Amazon S3
+- Amazon DynamoDB
+---
+
+## 📂 Estrutura do Projeto
+
+├── grava_db.py
+├── gerar_dados.py
+├── lambda_function.zip
+├── notification_roles.json
+├── notas_fiscais_2025.json
+├── README.md
+│
+├── docs/
+│   └── logs-localstack.txt
+│
+└── imagens/
+    ├── diagrama-estrutura.png
+    ├── 01-configuracao-trigger-s3.png
+    ├── 02-integracao-api-post-get.png
+    ├── 03-dynamodb-notas-cadastradas.png
+    ├── 04-dynamodb-notas-cadastradas2.png
+    ├── 05-testes-api-get-post.png
+    ├── 06-lambda-localstack.png
+    ├── 07-api-gateway-detalhes.png
+    └── 08-api-gateway-metodos.png
+---
+
 • Amazon API Gateway
 ---
