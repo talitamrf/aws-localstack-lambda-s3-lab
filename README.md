@@ -51,7 +51,7 @@ Neste projeto foi desenvolvida uma solução para automatizar o processamento de
 
 A arquitetura desenvolvida durante o desafio pode ser visualizada no diagrama abaixo.
 
-![Diagrama da Arquitetura](images/diagrama-estrutura.png)
+![Diagrama da Arquitetura](imagens/diagrama-estrutura.png)
 
 ---
 
